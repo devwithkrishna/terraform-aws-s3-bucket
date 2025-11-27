@@ -69,6 +69,8 @@ jobs:
 
     - name: Checkout repository
       uses: actions/checkout@v6
+      with:
+        fetch-depth: "0"
 
     - name: Render terraform docs inside the README.md and push changes back to PR branch
       uses: terraform-docs/gh-actions@v1.4.1
