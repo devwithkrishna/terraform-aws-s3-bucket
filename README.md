@@ -4,7 +4,7 @@
 [![create-release](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/release.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/release.yml)
 [![auto-fill-readme](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/auto-fill-readme.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/auto-fill-readme.yml)
 
-# terraform-aws-template
+# terraform-aws-s3-bucket
 
 ## Examples
 
