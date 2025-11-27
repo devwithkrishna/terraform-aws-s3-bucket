@@ -18,6 +18,7 @@ Please find the [examples]((https://github.com/devwithkrishna/terraform-aws-s3-b
 ├── .gitignore
 ├── CODEOWNERS
 ├── LICENSE
+├── Makefile
 ├── README.md
 ├── docs
 │   └── contributing.md
@@ -32,10 +33,12 @@ Please find the [examples]((https://github.com/devwithkrishna/terraform-aws-s3-b
 ├── providers.tf
 ├── test
 │   ├── README.md
+│   ├── go.mod
+│   ├── go.sum
 │   └── terratest_test.go
 └── variables.tf
 
-5 directories, 15 files
+5 directories, 18 files
 ```
 <!-- END_REPO_TREE -->
 
