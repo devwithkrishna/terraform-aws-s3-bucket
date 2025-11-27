@@ -13,7 +13,30 @@ Please find the [examples]((https://github.com/devwithkrishna/terraform-aws-temp
 ## 📂 Structure
 
 <!-- BEGIN_REPO_TREE -->
-<!-- This section will be replaced automatically by the repo tree -->
+```
+.
+├── .gitignore
+├── CODEOWNERS
+├── LICENSE
+├── README.md
+├── docs
+│   └── contributing.md
+├── examples
+│   └── sample
+│       ├── main.tf
+│       ├── outputs.tf
+│       ├── providers.tf
+│       └── variables.tf
+├── main.tf
+├── outputs.tf
+├── providers.tf
+├── test
+│   ├── README.md
+│   └── terratest_test.go
+└── variables.tf
+
+5 directories, 15 files
+```
 <!-- END_REPO_TREE -->
 
 
