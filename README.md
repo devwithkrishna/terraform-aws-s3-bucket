@@ -1,14 +1,14 @@
-[![terraform-lint](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/terraform-lint.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/terraform-lint.yml)
-[![go](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/go.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/go.yml)
-[![update-readme](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/update-readme.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/update-readme.yml)
-[![create-release](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/release.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/release.yml)
-[![auto-fill-readme](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/auto-fill-readme.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-template/actions/workflows/auto-fill-readme.yml)
+[![terraform-lint](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/terraform-lint.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/terraform-lint.yml)
+[![go](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/go.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/go.yml)
+[![update-readme](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/update-readme.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/update-readme.yml)
+[![create-release](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/release.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/release.yml)
+[![auto-fill-readme](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/auto-fill-readme.yml/badge.svg)](https://github.com/devwithkrishna/terraform-aws-s3-bucket/actions/workflows/auto-fill-readme.yml)
 
 # terraform-aws-template
 
 ## Examples
 
-Please find the [examples]((https://github.com/devwithkrishna/terraform-aws-template/tree/main/examples)) here 
+Please find the [examples]((https://github.com/devwithkrishna/terraform-aws-s3-bucket/tree/main/examples)) here 
 
 ## 📂 Structure
 

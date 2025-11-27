@@ -11,7 +11,7 @@
 2. Initialize the Go module (replace module path):
    - Example:
     ```
-     go mod init github.com/devwithkrishna/terraform-aws-template/test
+     go mod init github.com/devwithkrishna/terraform-aws-s3-bucket/test
     ```
 
 ### Install test dependencies (example)
