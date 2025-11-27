@@ -1,0 +1,27 @@
+version: 2
+updates:
+- package-ecosystem: "terraform"
+  directories:
+  - "/"
+  - "/examples/"
+  schedule:
+    interval: "weekly"
+  commit-message:
+    prefix: "terraform provider updates available: "
+  open-pull-requests-limit: 5
+
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "weekly"
+  commit-message:
+    prefix: "github actions updates available: "
+  open-pull-requests-limit: 5
+
+- package-ecosystem: "gomod"
+  directory: "test/"
+  schedule:
+    interval: "weekly"
+  commit-message:
+    prefix: "go module updates available: "
+  open-pull-requests-limit: 5
