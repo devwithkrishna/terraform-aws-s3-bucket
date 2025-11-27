@@ -25,3 +25,8 @@ output "s3_bucket_domain_fqdn" {
   description = "s3 bucket fqdn"
   value       = aws_s3_bucket.s3.bucket_domain_name
 }
+
+output "s3_tags" {
+  description = "S3 bucket tags"
+  value = aws_s3_bucket.s3.tags
+}

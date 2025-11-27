@@ -25,3 +25,8 @@ output "s3_bucket_domain_fqdn" {
   description = "s3 bucket fqdn"
   value       = module.example.s3_bucket_domain_fqdn
 }
+
+output "s3_tags" {
+  description = "S3 bucket tags"
+  value = module.example.s3_tags
+}
