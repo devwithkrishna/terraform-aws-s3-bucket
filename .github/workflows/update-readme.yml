@@ -29,7 +29,7 @@ jobs:
       with:
         token: ${{ steps.token-generation.outputs.token }}
         fetch-depth: 0
-        persist-credentials: false
+        persist-credentials: true
 
     - name: Install tree utility
       run: |
