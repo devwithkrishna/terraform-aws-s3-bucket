@@ -54,6 +54,9 @@ jobs:
         output-file: README.md
         output-method: inject
         git-push: "false"
+    - name: list files
+      run: |
+        ls -la
 
     - name: Commit and push changes
       run: |
