@@ -126,5 +126,6 @@ branches:
       dismissal_restrictions:
         users: []
         teams: []
+    required_status_checks: null
     # Prevent merge commits from being pushed to matching branches
     required_linear_history: false
