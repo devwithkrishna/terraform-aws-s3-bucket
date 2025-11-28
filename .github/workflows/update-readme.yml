@@ -57,6 +57,7 @@ jobs:
     - name: list files
       run: |
         ls -la
+        sudo chown -R $USER:$USER .
 
     - name: Commit and push changes
       run: |
