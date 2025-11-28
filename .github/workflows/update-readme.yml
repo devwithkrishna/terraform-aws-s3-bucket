@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  update-tree:
+  update:
     runs-on: ubuntu-latest
 
     steps:
@@ -47,34 +47,6 @@ jobs:
           !in_block
         ' README.md > README.tmp && mv README.tmp README.md
 
-    - name: Commit and push changes
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add README.md
-        git commit -m "docs: update README with repo structure" || echo "No changes to commit"
-        git pull --rebase origin main || true
-        git push origin main
-
-  update-terraform-docs:
-    runs-on: ubuntu-latest
-    needs: update-tree
-
-    steps:
-    - name: Token generator
-      uses: githubofkrishnadhas/github-access-using-githubapp@v2
-      id: token-generation
-      with:
-        github_app_id: ${{ secrets.TOKEN_GENERATOR_APPID }}
-        github_app_private_key: ${{ secrets.TOKEN_GENERATOR_PRIVATE_KEY }}
-
-    - name: Checkout repository
-      uses: actions/checkout@v6
-      with:
-        token: ${{ steps.token-generation.outputs.token }}
-        fetch-depth: 0
-        persist-credentials: false
-
     - name: Render terraform docs inside the README.md and push changes back to PR branch
       uses: terraform-docs/gh-actions@v1.4.1
       with:
@@ -85,14 +57,10 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        if [[ -n "$(git status --porcelain)" ]]; then
-          echo "Changes detected. Committing..."
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "chore: auto-fill README placeholders"
-          git pull --rebase origin main || true
-          git push origin main
-        else
-          echo "No changes detected, skipping commit."
-        fi
+        git status
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add README.md
+        git commit -m "docs: update README" || echo "No changes to commit"
+        git pull --rebase origin main || true
+        git push origin main
