@@ -25,7 +25,7 @@ jobs:
         github_app_private_key: ${{ secrets.TOKEN_GENERATOR_PRIVATE_KEY }}
 
     - name: Checkout repository
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         token: ${{ steps.token-generation.outputs.token }}
         fetch-depth: 0
